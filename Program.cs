@@ -15,6 +15,12 @@ if(choice == 1)
     Console.WriteLine("Amount? : ");
     var amount = int.Parse(Console.ReadLine());
 
+    if(amount <= 0)
+    {
+        Console.WriteLine("Amount must be greater than 0.");
+        return;
+    }
+
     var acc = new Account(accNo, 100000);
     acc.Deposit(amount);
 
@@ -27,6 +33,12 @@ else if(choice == 2)
 
     Console.WriteLine("Amount? : ");
     var amount = int.Parse(Console.ReadLine());
+
+    if (amount <= 0)
+    {
+        Console.WriteLine("Amount must be greater than 0.");
+        return;
+    }
 
     var acc = new Account(accNo, 100000);
     acc.Withdraw(amount);
@@ -43,6 +55,12 @@ else if(choice == 3)
 
     Console.WriteLine("Amount? : ");
     var amount = int.Parse(Console.ReadLine());
+
+    if (amount <= 0)
+    {
+        Console.WriteLine("Amount must be greater than 0.");
+        return;
+    }
 
     var fromAcc = new Account(fromAccNo, 100000);
     var toAcc = new Account(toAccNo, 100000);
