@@ -22,7 +22,16 @@ if(choice == 1)
 }
 else if(choice == 2)
 {
+    Console.WriteLine("Account No? : ");
+    var accNo = Console.ReadLine();
 
+    Console.WriteLine("Amount? : ");
+    var amount = int.Parse(Console.ReadLine());
+
+    var acc = new Account(accNo, 100000);
+    acc.Withdraw(amount);
+
+    Console.WriteLine($"After Withdraw => Acc No {acc.AccNo}, Balance : {acc.Balance}");
 }
 else if(choice == 3)
 {
