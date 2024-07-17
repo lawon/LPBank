@@ -1,7 +1,7 @@
 ﻿
 using LPBank;
 
-Console.WriteLine("Hello from LPBank!");
+Console.WriteLine("Hello to LPBank!");
 Console.WriteLine("------------------------------------------");
 
 Console.WriteLine("How may we help you? Key in 1 for Deposit, 2 for Withdraw and 3 for Transfer");
