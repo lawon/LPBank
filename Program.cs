@@ -7,7 +7,24 @@ Console.WriteLine("------------------------------------------");
 Console.WriteLine("How may we help you? Key in 1 for Deposit, 2 for Withdraw and 3 for Transfer");
 var choice = int.Parse(Console.ReadLine());
 
-if(choice == 3)
+if(choice == 1)
+{
+    Console.WriteLine("Account No? : ");
+    var accNo = Console.ReadLine();
+
+    Console.WriteLine("Amount? : ");
+    var amount = int.Parse(Console.ReadLine());
+
+    var acc = new Account(accNo, 100000);
+    acc.Deposit(amount);
+
+    Console.WriteLine($"After Deposit => Acc No {acc.AccNo}, Balance : {acc.Balance}");
+}
+else if(choice == 2)
+{
+
+}
+else if(choice == 3)
 {
     Console.WriteLine("From Account No? : ");
     var fromAccNo = Console.ReadLine();
